@@ -1,0 +1,26 @@
+{
+  "name": "api-json-sever",
+  "version": "1.0.0",
+  "description": "**need install global [JSON Server](https://github.com/typicode/json-server): `npm install -g json-server`**",
+  "main": "index.js",
+  "dependencies": {
+    "faker": "^4.1.0"
+  },
+  "devDependencies": {
+    "json-server": "^0.15.0"
+  },
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whidy/api-json-sever.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whidy/api-json-sever/issues"
+  },
+  "homepage": "https://github.com/whidy/api-json-sever#readme"
+}
