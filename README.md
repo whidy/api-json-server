@@ -1,6 +1,6 @@
 # api-json-sever
 
-**need install global [nodemon] installed(https://github.com/remy/nodemon): `npm install -g nodemon`**
+**need install global [nodemon](https://github.com/remy/nodemon) installed: `npm install -g nodemon`**
 
 require [`faker`](https://github.com/Marak/faker.js).
 

@@ -12,12 +12,26 @@ module.exports = () => {
   }
 
   // Create 50 posts
-  for (let i = 0; i < 50; i++) {
+  for (let i = 0; i < 5; i++) {
     data.posts.push({
       id: faker.random.number(),
       title: faker.name.title(),
-      author: faker.name.findName()
+      author: faker.name.findName(),
+      datePublish: faker.date.recent(),
+      summary: faker.lorem.sentences()
     })
+  }
+
+  // transform data to be a regular formatted api data
+  for (const key in data) {
+    if (data.hasOwnProperty(key)) {
+      let _data = data[key]
+      data[key] = {
+        code : 200,
+        data: _data,
+        msg:'请求成功！'
+      }
+    }
   }
   return data
 }
