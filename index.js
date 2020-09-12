@@ -1,5 +1,5 @@
-var faker = require("faker");
-
+const faker = require("faker");
+const uuidv1 = require('uuid/v1');
 module.exports = () => {
   const data = { user:null, users: [], posts: [] };
   // fake login user info
@@ -24,10 +24,11 @@ module.exports = () => {
   }
 
   // Create 50 posts
-  for (let i = 0; i < 5; i++) {
+  for (let i = 0; i < 10; i++) {
     data.posts.push({
       // id: faker.random.number(),
       id: i,
+      url: uuidv1(),
       title: faker.name.title(),
       author: faker.name.findName(),
       datePublish: faker.date.recent(),
